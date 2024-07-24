@@ -1,7 +1,7 @@
 {
-  "name": "@MasterATM/ngx-dropzone",
+  "name": "@masteratm/ngx-dropzone",
   "description": "A highly configurable dropzone component for Angular.",
-  "version": "17.0.0",
+  "version": "17.2.0",
   "author": "MasterATM",
   "keywords": [
     "angular",
