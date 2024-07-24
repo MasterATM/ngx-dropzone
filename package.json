@@ -1,6 +1,6 @@
 {
   "name": "ngx-dropzone-lib",
-  "version": "0.0.0",
+  "version": "17.0.0",
   "scripts": {
     "ng": "ng",
     "start:app": "ng serve app",
