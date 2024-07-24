@@ -19,10 +19,10 @@
   "publishConfig": {
     "access": "public"
   },
-  "homepage": "https://github.com/clemdesign/ngx-dropzone",
+  "homepage": "https://github.com/MasterATM/ngx-dropzone",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/clemdesign/ngx-dropzone.git"
+    "url": "git+https://github.com/MasterATM/ngx-dropzone.git"
   },
   "peerDependencies": {
     "@angular/common": "^16.0.0",
