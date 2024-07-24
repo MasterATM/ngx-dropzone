@@ -10,6 +10,7 @@
     "test:app": "ng test app",
     "lint:lib": "ng lint lib",
     "e2e": "ng e2e",
+    "test": "echo no tests",
     "npm:deploy": "npm run build:lib && cp README.md dist/ngx-dropzone/ && cd dist/ngx-dropzone && npm publish",
     "release": "cd projects/ngx-dropzone && npm version minor && cd ../.. && ng build --prod ngx-dropzone && cp README.md dist/ngx-dropzone/ && cd dist/ngx-dropzone && npm publish"
   },
