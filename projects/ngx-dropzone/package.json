@@ -1,7 +1,7 @@
 {
   "name": "@masteratm/ngx-dropzone",
   "description": "A highly configurable dropzone component for Angular.",
-  "version": "18.0.0",
+  "version": "18.0.1",
   "author": "MasterATM",
   "keywords": [
     "angular",
@@ -25,9 +25,9 @@
     "url": "git+https://github.com/MasterATM/ngx-dropzone.git"
   },
   "peerDependencies": {
-    "@angular/common": "^17.0.0",
-    "@angular/core": "^17.0.0",
-    "@angular/forms": "^17.0.0",
+    "@angular/common": "^18.2.13",
+    "@angular/core": "^18.2.13",
+    "@angular/forms": "^18.2.13",
     "tslib": "^2.6.2"
   },
   "bugs": {
