@@ -6,10 +6,12 @@ import { DomSanitizer, SafeStyle } from '@angular/platform-browser';
     selector: 'ngx-dropzone-image-preview',
     template: `
     <img [src]="imageSrc" />
-		<ng-content select="ngx-dropzone-label"></ng-content>
-    <ngx-dropzone-remove-badge *ngIf="removable" (click)="_remove($event)">
-    </ngx-dropzone-remove-badge>
-	`,
+    <ng-content select="ngx-dropzone-label"></ng-content>
+    @if (removable) {
+      <ngx-dropzone-remove-badge (click)="_remove($event)">
+      </ngx-dropzone-remove-badge>
+    }
+    `,
     styleUrls: ['./ngx-dropzone-image-preview.component.scss'],
     providers: [
         {

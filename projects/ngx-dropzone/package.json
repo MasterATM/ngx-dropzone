@@ -25,9 +25,9 @@
     "url": "git+https://github.com/MasterATM/ngx-dropzone.git"
   },
   "peerDependencies": {
-    "@angular/common": "^19.2.14",
-    "@angular/core": "^19.2.14",
-    "@angular/forms": "^19.2.14",
+    "@angular/common": "^20.0.2",
+    "@angular/core": "^20.0.2",
+    "@angular/forms": "^20.0.2",
     "tslib": "^2.6.2"
   },
   "bugs": {

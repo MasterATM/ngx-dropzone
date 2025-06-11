@@ -5,13 +5,17 @@ import { DomSanitizer, SafeUrl } from '@angular/platform-browser';
 @Component({
     selector: 'ngx-dropzone-video-preview',
     template: `
-    <video *ngIf="sanitizedVideoSrc" controls (click)="$event.stopPropagation()">
-      <source [src]="sanitizedVideoSrc" />
-    </video>
+    @if (sanitizedVideoSrc) {
+      <video controls (click)="$event.stopPropagation()">
+        <source [src]="sanitizedVideoSrc" />
+      </video>
+    }
     <ng-content select="ngx-dropzone-label"></ng-content>
-    <ngx-dropzone-remove-badge *ngIf="removable" (click)="_remove($event)">
-    </ngx-dropzone-remove-badge>
-	`,
+    @if (removable) {
+      <ngx-dropzone-remove-badge (click)="_remove($event)">
+      </ngx-dropzone-remove-badge>
+    }
+    `,
     styleUrls: ['./ngx-dropzone-video-preview.component.scss'],
     providers: [
         {

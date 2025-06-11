@@ -11,9 +11,11 @@ enum KEY_CODE {
     selector: 'ngx-dropzone-preview',
     template: `
 		<ng-content select="ngx-dropzone-label"></ng-content>
-		<ngx-dropzone-remove-badge *ngIf="removable" (click)="_remove($event)">
-		</ngx-dropzone-remove-badge>
-	`,
+		@if (removable) {
+		  <ngx-dropzone-remove-badge (click)="_remove($event)">
+		  </ngx-dropzone-remove-badge>
+		}
+		`,
     styleUrls: ['./ngx-dropzone-preview.component.scss'],
     standalone: false
 })
