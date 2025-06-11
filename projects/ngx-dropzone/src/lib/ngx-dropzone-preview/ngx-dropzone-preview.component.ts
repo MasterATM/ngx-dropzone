@@ -8,13 +8,14 @@ enum KEY_CODE {
 }
 
 @Component({
-	selector: 'ngx-dropzone-preview',
-	template: `
+    selector: 'ngx-dropzone-preview',
+    template: `
 		<ng-content select="ngx-dropzone-label"></ng-content>
 		<ngx-dropzone-remove-badge *ngIf="removable" (click)="_remove($event)">
 		</ngx-dropzone-remove-badge>
 	`,
-	styleUrls: ['./ngx-dropzone-preview.component.scss']
+    styleUrls: ['./ngx-dropzone-preview.component.scss'],
+    standalone: false
 })
 export class NgxDropzonePreviewComponent {
 

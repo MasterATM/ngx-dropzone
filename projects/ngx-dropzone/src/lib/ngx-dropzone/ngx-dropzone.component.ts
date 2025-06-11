@@ -10,10 +10,11 @@ export interface NgxDropzoneChangeEvent {
 }
 
 @Component({
-  selector: 'ngx-dropzone, [ngx-dropzone]',
-  templateUrl: './ngx-dropzone.component.html',
-  styleUrls: ['./ngx-dropzone.component.scss'],
-  providers: [NgxDropzoneService]
+    selector: 'ngx-dropzone, [ngx-dropzone]',
+    templateUrl: './ngx-dropzone.component.html',
+    styleUrls: ['./ngx-dropzone.component.scss'],
+    providers: [NgxDropzoneService],
+    standalone: false
 })
 export class NgxDropzoneComponent {
 

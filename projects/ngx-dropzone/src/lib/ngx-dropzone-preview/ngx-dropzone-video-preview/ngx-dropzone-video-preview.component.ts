@@ -3,8 +3,8 @@ import { NgxDropzonePreviewComponent } from '../ngx-dropzone-preview.component';
 import { DomSanitizer, SafeUrl } from '@angular/platform-browser';
 
 @Component({
-  selector: 'ngx-dropzone-video-preview',
-  template: `
+    selector: 'ngx-dropzone-video-preview',
+    template: `
     <video *ngIf="sanitizedVideoSrc" controls (click)="$event.stopPropagation()">
       <source [src]="sanitizedVideoSrc" />
     </video>
@@ -12,13 +12,14 @@ import { DomSanitizer, SafeUrl } from '@angular/platform-browser';
     <ngx-dropzone-remove-badge *ngIf="removable" (click)="_remove($event)">
     </ngx-dropzone-remove-badge>
 	`,
-  styleUrls: ['./ngx-dropzone-video-preview.component.scss'],
-  providers: [
-    {
-      provide: NgxDropzonePreviewComponent,
-      useExisting: NgxDropzoneVideoPreviewComponent
-    }
-  ]
+    styleUrls: ['./ngx-dropzone-video-preview.component.scss'],
+    providers: [
+        {
+            provide: NgxDropzonePreviewComponent,
+            useExisting: NgxDropzoneVideoPreviewComponent
+        }
+    ],
+    standalone: false
 })
 export class NgxDropzoneVideoPreviewComponent extends NgxDropzonePreviewComponent implements OnInit, OnDestroy {
 

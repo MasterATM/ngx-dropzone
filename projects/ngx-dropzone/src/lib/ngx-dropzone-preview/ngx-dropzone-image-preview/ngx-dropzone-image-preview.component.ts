@@ -3,20 +3,21 @@ import { NgxDropzonePreviewComponent } from '../ngx-dropzone-preview.component';
 import { DomSanitizer, SafeStyle } from '@angular/platform-browser';
 
 @Component({
-  selector: 'ngx-dropzone-image-preview',
-  template: `
+    selector: 'ngx-dropzone-image-preview',
+    template: `
     <img [src]="imageSrc" />
 		<ng-content select="ngx-dropzone-label"></ng-content>
     <ngx-dropzone-remove-badge *ngIf="removable" (click)="_remove($event)">
     </ngx-dropzone-remove-badge>
 	`,
-  styleUrls: ['./ngx-dropzone-image-preview.component.scss'],
-  providers: [
-    {
-      provide: NgxDropzonePreviewComponent,
-      useExisting: NgxDropzoneImagePreviewComponent
-    }
-  ]
+    styleUrls: ['./ngx-dropzone-image-preview.component.scss'],
+    providers: [
+        {
+            provide: NgxDropzonePreviewComponent,
+            useExisting: NgxDropzoneImagePreviewComponent
+        }
+    ],
+    standalone: false
 })
 export class NgxDropzoneImagePreviewComponent extends NgxDropzonePreviewComponent implements OnInit {
 
