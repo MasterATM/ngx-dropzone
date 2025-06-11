@@ -1,6 +1,6 @@
 {
   "name": "ngx-dropzone-lib",
-  "version": "19.0.1",
+  "version": "20.0.0",
   "scripts": {
     "ng": "ng",
     "start:app": "ng serve app",
@@ -11,8 +11,7 @@
     "lint:lib": "ng lint lib",
     "e2e": "ng e2e",
     "test": "echo no tests",
-    "npm:deploy": "npm run build:lib && cp README.md dist/ngx-dropzone/ && cd dist/ngx-dropzone && npm publish",
-    "release": "cd projects/ngx-dropzone && npm version major && cd ../.. && ng build lib --configuration production && cp README.md dist/ngx-dropzone/ && cd dist/ngx-dropzone && npm publish"
+    "npm:deploy": "npm run build:lib && cp README.md dist/ngx-dropzone/ && cd dist/ngx-dropzone && npm publish"
   },
   "private": true,
   "dependencies": {
